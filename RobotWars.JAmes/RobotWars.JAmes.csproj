@@ -35,5 +35,8 @@
     <Compile Include="Game.cs" />
     <Compile Include="InputReader.cs" />
     <Compile Include="WarsConfig.cs" />
+    <Compile Include="Robot.cs" />
+    <Compile Include="Position.cs" />
+    <Compile Include="Remote.cs" />
   </ItemGroup>
 </Project>

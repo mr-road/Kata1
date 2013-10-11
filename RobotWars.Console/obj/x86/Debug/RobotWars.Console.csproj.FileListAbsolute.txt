@@ -1,7 +1,0 @@
-C:\Users\james\Documents\Projects\RobotWars\RobotWars.Console\bin\Debug\RobotWars.Console.exe
-C:\Users\james\Documents\Projects\RobotWars\RobotWars.Console\bin\Debug\RobotWars.Console.pdb
-C:\Users\james\Documents\Projects\RobotWars\RobotWars.Console\bin\Debug\RoborWars.JAmes.dll
-C:\Users\james\Documents\Projects\RobotWars\RobotWars.Console\bin\Debug\RoborWars.JAmes.pdb
-C:\Users\james\Documents\Projects\RobotWars\RobotWars.Console\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\james\Documents\Projects\RobotWars\RobotWars.Console\obj\x86\Debug\RobotWars.Console.exe
-C:\Users\james\Documents\Projects\RobotWars\RobotWars.Console\obj\x86\Debug\RobotWars.Console.pdb

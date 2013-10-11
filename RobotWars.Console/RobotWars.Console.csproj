@@ -39,9 +39,12 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\RoborWars.JAmes\RobotWars.JAmes.csproj">
+    <ProjectReference Include="..\RobotWars.JAmes\RobotWars.JAmes.csproj">
       <Project>{4188E049-1AB2-4F3B-A609-5CA662442CA1}</Project>
       <Name>RobotWars.JAmes</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="InputFile.txt" />
   </ItemGroup>
 </Project>

@@ -1,0 +1,10 @@
+C:\Users\james\Documents\Projects\RobotWars\RobotWars.Test\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\james\Documents\Projects\RobotWars\RobotWars.Test\bin\Debug\RobotWars.Test.dll
+C:\Users\james\Documents\Projects\RobotWars\RobotWars.Test\bin\Debug\RobotWars.Test.pdb
+C:\Users\james\Documents\Projects\RobotWars\RobotWars.Test\bin\Debug\RoborWars.JAmes.dll
+C:\Users\james\Documents\Projects\RobotWars\RobotWars.Test\bin\Debug\RoborWars.JAmes.pdb
+C:\Users\james\Documents\Projects\RobotWars\RobotWars.Test\obj\Debug\RobotWars.Test.dll
+C:\Users\james\Documents\Projects\RobotWars\RobotWars.Test\obj\Debug\RobotWars.Test.pdb
+C:\Users\james\Documents\Projects\RobotWars\RobotWars.Test\bin\Debug\nunit.framework.dll
+C:\Users\james\Documents\Projects\RobotWars\RobotWars.Test\bin\Debug\TestTwo.txt
+C:\Users\james\Documents\Projects\RobotWars\RobotWars.Test\bin\Debug\TestOne.txt

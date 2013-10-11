@@ -33,5 +33,7 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Compile Include="Game.cs" />
+    <Compile Include="InputReader.cs" />
+    <Compile Include="WarsConfig.cs" />
   </ItemGroup>
 </Project>

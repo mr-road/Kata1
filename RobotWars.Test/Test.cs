@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System;
+using RobotWars.JAmes;
 
 namespace RobotWars.Test
 {
@@ -7,10 +8,12 @@ namespace RobotWars.Test
 	public class GameTests
 	{
 		[Test()]
-		public void  GameHasRuin()
+		public void  RunThrowsNoExceptions ()
 		{
-
+			new Game().Run ("TestOne.txt");
+			Assert.True (true);
 		}
+
 	}
 }
 

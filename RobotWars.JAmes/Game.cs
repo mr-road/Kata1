@@ -11,6 +11,7 @@ namespace RobotWars.JAmes
 		public void Run(string InstructionFilePath)
 		{
 
+			return; 
 		}
 	}
 

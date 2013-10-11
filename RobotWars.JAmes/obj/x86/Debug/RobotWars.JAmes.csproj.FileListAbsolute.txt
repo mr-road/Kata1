@@ -1,0 +1,5 @@
+C:\Users\james\Documents\Projects\RobotWars\RobotWars.JAmes\bin\Debug\RoborWars.JAmes.dll
+C:\Users\james\Documents\Projects\RobotWars\RobotWars.JAmes\bin\Debug\RoborWars.JAmes.pdb
+C:\Users\james\Documents\Projects\RobotWars\RobotWars.JAmes\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\james\Documents\Projects\RobotWars\RobotWars.JAmes\obj\x86\Debug\RoborWars.JAmes.dll
+C:\Users\james\Documents\Projects\RobotWars\RobotWars.JAmes\obj\x86\Debug\RoborWars.JAmes.pdb

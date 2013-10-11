@@ -1,0 +1,25 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RobotWars.Test\Test.cs">
+    <Files>
+      <File FileName="RobotWars.Console\Program.cs" Line="19" Column="40" />
+      <File FileName="RobotWars.JAmes\Game.cs" Line="1" Column="1" />
+      <File FileName="RobotWars.Test\Test.cs" Line="10" Column="27" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="RobotWars.Console" expanded="True" />
+          <Node name="RobotWars.JAmes" expanded="True" />
+          <Node name="RobotWars.Test" expanded="True">
+            <Node name="Test.cs" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

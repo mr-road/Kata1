@@ -39,4 +39,7 @@
     <Compile Include="Position.cs" />
     <Compile Include="Remote.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Build.Tasks.v4.0" />
+  </ItemGroup>
 </Project>

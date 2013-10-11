@@ -1,10 +1,11 @@
 using System;
+using Microsoft.Build.Tasks;
 
 namespace RobotWars.JAmes
 {
 	public class Remote
 	{
-
+		static int FORWARD = 1;
 
 		public static Position Control (char action, Position _position)
 		{
@@ -18,11 +19,18 @@ namespace RobotWars.JAmes
 
 			if (action == 'M') 
 			{
-
+				Move (_position, FORWARD);
 			}
 
 			return _position;
 
+		}
+
+		public static void Move(Position _position, int direction)
+		{
+			if (_position._facing == Facing.North) {
+				_position._y += direction;
+			}
 		}
 
 		static void TurnLeft (Position _position)

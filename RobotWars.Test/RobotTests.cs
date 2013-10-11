@@ -72,53 +72,51 @@ namespace RobotWars.Test
 			Assert.That(position._facing, Is.EqualTo( Facing.North));
 		}
 
-
-
-	/*	[Test()]
+		[Test()]
 		public void RobotMoveEastTest ()
 		{
-			var arthur = new Robot(2, 2, "E");
+			var arthur = new Robot(2, 2, Facing.East);
 			arthur.Action ('M');
 			var position = arthur.GetPosition();
 			Assert.That(position._x, Is.EqualTo(3));
 			Assert.That(position._y, Is.EqualTo(2));
-			Assert.That(position._facing, Is.EqualTo("E"));
+			Assert.That(position._facing, Is.EqualTo(Facing.East));
 		}
 
 		[Test()]
 		public void RobotMoveNorthTest ()
 		{
-			var arthur = new Robot(2, 2, "N");
+			var arthur = new Robot(2, 2, Facing.North);
 			arthur.Action ('M');
 			var position = arthur.GetPosition();
 			Assert.That(position._x, Is.EqualTo(2));
 			Assert.That(position._y, Is.EqualTo(3));
-			Assert.That(position._facing, Is.EqualTo("N"));
+			Assert.That(position._facing, Is.EqualTo(Facing.North));
 		}
 
 		[Test()]
 		public void RobotMoveSouthTest ()
 		{
-			var arthur = new Robot(2, 2, "S");
+			var arthur = new Robot(2, 2, Facing.South);
 			arthur.Action ('M');
 			var position = arthur.GetPosition();
 			Assert.That(position._x, Is.EqualTo(2));
 			Assert.That(position._y, Is.EqualTo(1));
-			Assert.That(position._facing, Is.EqualTo("S"));
+			Assert.That(position._facing, Is.EqualTo(Facing.South));
 		}
 
 		[Test()]
 		public void RobotMoveWestTest ()
 		{
-			var arthur = new Robot(2, 2, "W");
+			var arthur = new Robot(2, 2, Facing.West);
 			arthur.Action ('M');
 			var position = arthur.GetPosition();
 			Assert.That(position._x, Is.EqualTo(1));
 			Assert.That(position._y, Is.EqualTo(2));
-			Assert.That(position._facing, Is.EqualTo("W"));
+			Assert.That(position._facing, Is.EqualTo(Facing.West));
 		}
 
-*/
+
 
 	}
 }

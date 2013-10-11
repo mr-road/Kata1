@@ -31,6 +31,18 @@ namespace RobotWars.JAmes
 			if (_position._facing == Facing.North) {
 				_position._y += direction;
 			}
+
+			if (_position._facing == Facing.South) {
+				_position._y -= direction;
+			}
+
+			if (_position._facing == Facing.East) {
+				_position._x += direction;
+			}
+
+			if (_position._facing == Facing.West) {
+				_position._x -= direction;
+			}
 		}
 
 		static void TurnLeft (Position _position)

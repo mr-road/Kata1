@@ -13,6 +13,8 @@ namespace RobotWars.Console
 				System.Console.ReadKey ();
 				Environment.Exit (0);
 			}
+			System.Console.WriteLine ("3...2...1...Activate! (Press Enter)");
+			System.Console.ReadKey ();
 
 			var positions = new Game().Run (args[0]);
 
@@ -24,7 +26,7 @@ namespace RobotWars.Console
 			}
 
 			System.Console.WriteLine ("GameOver!");
-			System.Console.ReadKey ();
+			//System.Console.ReadKey ();
 			Environment.Exit (0);
 		}
 

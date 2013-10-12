@@ -5,10 +5,12 @@ namespace RobotWars.JAmes
 	public class Robot
 	{
 		Position _position;
+		Remote _remote;
 
-		public Robot (int X, int Y, Facing facing)
+		public Robot (Position position, Remote remote)
 		{
-			_position = new Position (X, Y, facing);
+			_remote = remote;
+			_position = position;
 		}
 
 		public Position GetPosition ()
@@ -18,7 +20,7 @@ namespace RobotWars.JAmes
 
 		public  void Action (char c)
 		{
-			_position = Remote.Control (c, _position);
+			_position = _remote.Control (c, _position);
 		}
 	}
 }

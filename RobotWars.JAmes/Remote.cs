@@ -6,8 +6,17 @@ namespace RobotWars.JAmes
 	public class Remote
 	{
 		static int FORWARD = 1;
+		readonly int MAX_X = 1;
+		readonly int MAX_Y = 1;
 
-		public static Position Control (char action, Position _position)
+		public Remote(int maxX, int maxY)
+		{
+			MAX_X = maxX;
+			MAX_Y = maxY;
+		}
+
+
+		public Position Control (char action, Position _position)
 		{
 			if (action == 'L') {
 				TurnLeft (_position);
@@ -26,10 +35,11 @@ namespace RobotWars.JAmes
 
 		}
 
-		public static void Move(Position _position, int direction)
+		public  void Move(Position _position, int direction)
 		{
 			if (_position._facing == Facing.North) {
 				_position._y += direction;
+			
 			}
 
 			if (_position._facing == Facing.South) {
@@ -45,7 +55,7 @@ namespace RobotWars.JAmes
 			}
 		}
 
-		static void TurnLeft (Position _position)
+		 void TurnLeft (Position _position)
 		{
 			_position._facing = _position._facing - 1;
 			if ((int)_position._facing < (int)Facing.North) {
@@ -53,7 +63,7 @@ namespace RobotWars.JAmes
 			}
 		}
 
-		static void TurnRight (Position _position)
+		 void TurnRight (Position _position)
 		{
 			_position._facing = _position._facing + 1;
 			if ((int)_position._facing > (int)Facing.West) {

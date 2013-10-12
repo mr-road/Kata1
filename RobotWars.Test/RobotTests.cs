@@ -17,7 +17,8 @@ namespace RobotWars.Test
 		[Test()]
 		public void RobotSetupTest ()
 		{
-			var arthur = new Robot(2, 2, Facing.East);
+			var startPosition = new Position (2, 2, Facing.East);
+			var arthur = new Robot(startPosition, new Remote(3,3));
 			var position = arthur.GetPosition();
 			Assert.That(position._x, Is.EqualTo(2));
 			Assert.That(position._y, Is.EqualTo(2));
@@ -27,7 +28,8 @@ namespace RobotWars.Test
 		[Test()]
 		public void RobotLeftTurnTest ()
 		{
-			var arthur = new Robot(2, 2, Facing.East);
+			var startPosition = new Position (2, 2, Facing.East);
+			var arthur = new Robot(startPosition, new Remote(3,3));
 			arthur.Action ('L');
 			var position = arthur.GetPosition();
 			Assert.That(position._x, Is.EqualTo(2));
@@ -38,7 +40,8 @@ namespace RobotWars.Test
 		[Test()]
 		public void RobotLeft_Left_LeftTurnTest ()
 		{
-			var arthur = new Robot(2, 2, Facing.East);
+			var startPosition = new Position (2, 2, Facing.East);
+				var arthur = new Robot(startPosition, new Remote(3,3));
 			arthur.Action ('L');
 			arthur.Action ('L');
 			arthur.Action ('L');
@@ -51,7 +54,8 @@ namespace RobotWars.Test
 		[Test()]
 		public void RobotRightTurnTest ()
 		{
-			var arthur = new Robot(2, 2,  Facing.East);
+			var startPosition = new Position (2, 2, Facing.East);
+			var arthur = new Robot(startPosition, new Remote(3,3));
 			arthur.Action ('R');
 			var position = arthur.GetPosition();
 			Assert.That(position._x, Is.EqualTo(2));
@@ -62,7 +66,8 @@ namespace RobotWars.Test
 		[Test()]
 		public void RobotRight_Right_RightTurnTest ()
 		{
-			var arthur = new Robot(2, 2,  Facing.East);
+			var startPosition = new Position (2, 2, Facing.East);
+			var arthur = new Robot(startPosition, new Remote(3,3));
 			arthur.Action ('R');
 			arthur.Action ('R');
 			arthur.Action ('R');
@@ -75,7 +80,8 @@ namespace RobotWars.Test
 		[Test()]
 		public void RobotMoveEastTest ()
 		{
-			var arthur = new Robot(2, 2, Facing.East);
+			var startPosition = new Position (2, 2, Facing.East);
+			var arthur = new Robot(startPosition, new Remote(3,3));
 			arthur.Action ('M');
 			var position = arthur.GetPosition();
 			Assert.That(position._x, Is.EqualTo(3));
@@ -85,8 +91,8 @@ namespace RobotWars.Test
 
 		[Test()]
 		public void RobotMoveNorthTest ()
-		{
-			var arthur = new Robot(2, 2, Facing.North);
+		{var startPosition = new Position (2, 2, Facing.North);
+			var arthur = new Robot(startPosition, new Remote(3,3));
 			arthur.Action ('M');
 			var position = arthur.GetPosition();
 			Assert.That(position._x, Is.EqualTo(2));
@@ -96,8 +102,8 @@ namespace RobotWars.Test
 
 		[Test()]
 		public void RobotMoveSouthTest ()
-		{
-			var arthur = new Robot(2, 2, Facing.South);
+		{var startPosition = new Position (2, 2, Facing.South);
+			var arthur = new Robot(startPosition, new Remote(3,3));
 			arthur.Action ('M');
 			var position = arthur.GetPosition();
 			Assert.That(position._x, Is.EqualTo(2));
@@ -107,8 +113,8 @@ namespace RobotWars.Test
 
 		[Test()]
 		public void RobotMoveWestTest ()
-		{
-			var arthur = new Robot(2, 2, Facing.West);
+		{var startPosition = new Position (2, 2, Facing.West);
+			var arthur = new Robot(startPosition, new Remote(3,3));
 			arthur.Action ('M');
 			var position = arthur.GetPosition();
 			Assert.That(position._x, Is.EqualTo(1));

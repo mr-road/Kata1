@@ -27,9 +27,9 @@ namespace RobotWars.Test
 		[Test ()]
 		public void ReadInRobotOneConfig ()
 		{
-			Assert.That (config1.robotOneX, Is.EqualTo (5));
-			Assert.That (config1.robotOneY, Is.EqualTo (6));
-			Assert.That (config1.robotOneFacing, Is.EqualTo ("Q"));
+			Assert.That (config1.robotOnePosition._x, Is.EqualTo (5));
+			Assert.That (config1.robotOnePosition._y, Is.EqualTo (6));
+			Assert.That (config1.robotOnePosition._facing, Is.EqualTo ( Facing.North));
 		}
 
 		[Test ()]
@@ -42,9 +42,9 @@ namespace RobotWars.Test
 		[Test ()]
 		public void ReadInRobotTwoConfig ()
 		{
-			Assert.That (config1.robotTwoX, Is.EqualTo (4));
-			Assert.That (config1.robotTwoY, Is.EqualTo (7));
-			Assert.That (config1.robotTwoFacing, Is.EqualTo ("W"));
+			Assert.That (config1.robotTwoPosition._x, Is.EqualTo (4));
+			Assert.That (config1.robotTwoPosition._y, Is.EqualTo (7));
+			Assert.That (config1.robotTwoPosition._facing, Is.EqualTo (Facing.West));
 		}
 
 		[Test ()]

@@ -14,6 +14,18 @@ namespace RobotWars.Test
 			Assert.True (true);
 		}
 
+		[Test()]
+		public void  CanReadInTestFileAndMove ()
+		{
+			//x  x x x //x  x x x
+			//x  x x x //<  = x x
+			//1> x x x //=  # x x
+			//x  x x x //x  x x x
+			var positions = new Game().Run ("TestTwo.txt");
+			Assert.That (positions [0]._facing, Is.EqualTo (Facing.West));
+			Assert.That (positions [0]._x, Is.EqualTo (1));
+			Assert.That (positions [0]._y, Is.EqualTo (3));
+		}
 	}
 }
 

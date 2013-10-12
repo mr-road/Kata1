@@ -14,7 +14,14 @@ namespace RobotWars.Console
 				Environment.Exit (0);
 			}
 
-			new Game().Run (args[0]);
+			var positions = new Game().Run (args[0]);
+
+			foreach (Position p in positions) 
+			{
+				var facing = p._facing.ToString ().Substring (0, 1);
+				var finalPosition = String.Format ("{0} {1} {2}", p._x, p._y, facing);
+				System.Console.WriteLine (finalPosition);
+			}
 
 			System.Console.WriteLine ("GameOver!");
 			System.Console.ReadKey ();
@@ -24,6 +31,7 @@ namespace RobotWars.Console
 		static void PrintHelp ()
 		{
 			System.Console.WriteLine ("Please provide instruction file path");
+			System.Console.WriteLine ("Try: InputFile.txt");
 		}
 	}
 }

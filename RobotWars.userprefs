@@ -1,25 +1,69 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="RobotWars.Test\Test.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RobotWars.Console\Program.cs">
     <Files>
-      <File FileName="RobotWars.Console\Program.cs" Line="19" Column="40" />
-      <File FileName="RobotWars.JAmes\Game.cs" Line="1" Column="1" />
-      <File FileName="RobotWars.Test\Test.cs" Line="10" Column="27" />
+      <File FileName="RobotWars.JAmes\Game.cs" Line="33" Column="36" />
+      <File FileName="RobotWars.JAmes\InputReader.cs" Line="31" Column="23" />
+      <File FileName="RobotWars.Test\RobotTests.cs" Line="43" Column="57" />
+      <File FileName="RobotWars.JAmes\Robot.cs" Line="23" Column="28" />
+      <File FileName="RobotWars.JAmes\Remote.cs" Line="47" Column="51" />
+      <File FileName="RobotWars.Test\Test.cs" Line="47" Column="25" />
+      <File FileName="RobotWars.JAmes\WarsConfig.cs" Line="15" Column="49" />
+      <File FileName="RobotWars.Test\TestTwo.txt" Line="1" Column="1" />
+      <File FileName="RobotWars.Test\Test3.txt" Line="5" Column="5" />
+      <File FileName="RobotWars.Console\Program.cs" Line="22" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="RobotWars.Console" expanded="True" />
+          <Node name="RobotWars.Console" expanded="True" selected="True" />
           <Node name="RobotWars.JAmes" expanded="True" />
+          <Node name="RobotWars.Test" expanded="True" />
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State expanded="True">
           <Node name="RobotWars.Test" expanded="True">
-            <Node name="Test.cs" selected="True" />
+            <Node name="RobotWars" expanded="True">
+              <Node name="Test" expanded="True">
+                <Node name="GameTests" expanded="True">
+                  <Node name="CanReadInTestThreeAndHandleArenaBoundries" selected="True" />
+                </Node>
+                <Node name="InputReaderTest" expanded="True" />
+                <Node name="RobotTests" expanded="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\james\Documents\Projects\RobotWars\RobotWars.JAmes\InputReader.cs" line="50" column="1" />
+      <Breakpoint file="C:\Users\james\Documents\Projects\RobotWars\RobotWars.JAmes\InputReader.cs" line="54" column="1" />
+      <Breakpoint file="C:\Users\james\Documents\Projects\RobotWars\RobotWars.JAmes\InputReader.cs" line="43" column="1" />
+      <Breakpoint file="C:\Users\james\Documents\Projects\RobotWars\RobotWars.Test\InputReaderTests.cs" line="17" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.RobotWars.Console>
+    <MonoDevelop.Ide.CustomExecutionModes>
+      <Data Name="Default (Custom)" Id="d1ce7de0-4405-4803-811d-319127d12b49" ModeId="Default">
+        <CommandData>
+          <Item Key="MonoDevelop.Ide.Execution.CustomArgsCustomizer">
+            <Value Arguments="InputFile.txt" ctype="CustomArgsExecutionModeData">
+              <EnvironmentVariables />
+            </Value>
+          </Item>
+        </CommandData>
+      </Data>
+    </MonoDevelop.Ide.CustomExecutionModes>
+  </MonoDevelop.Ide.ItemProperties.RobotWars.Console>
 </Properties>

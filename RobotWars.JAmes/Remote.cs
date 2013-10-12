@@ -39,22 +39,33 @@ namespace RobotWars.JAmes
 		{
 			if (_position._facing == Facing.North) {
 				_position._y += direction;
-				if (_position._y > MAX_Y) {
-					_position._y = MAX_Y;
-				}
+				_position._y = BoundCheck (_position._y, MAX_Y);
 			}
 
 			if (_position._facing == Facing.South) {
 				_position._y -= direction;
+				_position._y = BoundCheck (_position._y, MAX_Y);
 			}
 
 			if (_position._facing == Facing.East) {
 				_position._x += direction;
+				_position._x = BoundCheck (_position._x, MAX_X);
 			}
 
 			if (_position._facing == Facing.West) {
 				_position._x -= direction;
+				_position._x = BoundCheck (_position._x, MAX_X);
 			}
+		}
+
+		int BoundCheck(int coordinate, int max){
+			if (coordinate > max) {
+				coordinate = max;
+			}
+			if (coordinate < 0) {
+				coordinate = 0;
+			}
+			return coordinate;
 		}
 
 		 void TurnLeft (Position _position)

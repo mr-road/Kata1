@@ -41,6 +41,22 @@ namespace RobotWars.Test
 		}
 
 		[Test()]
+		public void  CanReadInTestThreeAndHandleArenaBoundries ()
+		{              //>  V
+			//x  < x x //^  < x x
+			//x  x x x //x  x x x
+			//x  x x x //x  x x x
+			//x  x x x //x  x x x
+			var positions = new Game().Run ("Test3.txt");
+			Assert.That (positions [0]._facing, Is.EqualTo (Facing.East));
+			Assert.That (positions [0]._x, Is.EqualTo (2));
+			Assert.That (positions [0]._y, Is.EqualTo (2));
+			Assert.That (positions [1]._facing, Is.EqualTo (Facing.South));
+			Assert.That (positions [1]._x, Is.EqualTo (2));
+			Assert.That (positions [1]._y, Is.EqualTo (0));
+		}
+
+		[Test()]
 		public void  CanReadInTopTableFile ()
 		{
 			var positions = new Game().Run ("InputFile.txt");

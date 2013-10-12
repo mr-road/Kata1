@@ -39,7 +39,9 @@ namespace RobotWars.JAmes
 		{
 			if (_position._facing == Facing.North) {
 				_position._y += direction;
-			
+				if (_position._y > MAX_Y) {
+					_position._y = MAX_Y;
+				}
 			}
 
 			if (_position._facing == Facing.South) {
